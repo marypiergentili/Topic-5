@@ -1,0 +1,57 @@
+show dbs
+//create or use a bd named high_school
+use high_school
+
+//inserting first teacher
+db.teacher.insert(
+{	_id: 1,
+	fistName: "Aida",
+	lastName: "Villarruel",
+	dateOfBirth: "1956-04-19",
+	course:[
+		{
+			course_id: 1
+		},
+		{
+			course_id: 3
+		}
+		]
+}
+)
+
+//inserting second teacher
+db.teacher.insert(
+{	_id: 2,
+	fistName: "Maria Esther",
+	lastName: "Gabaldon",
+	dateOfBirth: "1940-03-02",
+	course:[
+		{
+			course_id: 2
+		},
+		{
+			course_id: 3
+		}
+		]
+}
+)
+
+//inserting third teacher
+db.teacher.insert(
+{	_id: 3,
+	fistName: "Raul",
+	lastName: "Piergentili",
+	dateOfBirth: "1954-07-31",
+	course:[
+		{
+			course_id: 1
+		},
+		{
+			course_id: 2
+		},
+		{
+			course_id: 3
+		}
+		]
+}
+)

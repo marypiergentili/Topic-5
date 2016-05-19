@@ -1,0 +1,405 @@
+show dbs
+//create or use a bd named high_school
+use high_school
+
+//inserting first student
+db.student.insert(
+{	_id: 1,
+	registrationNumber: 1,
+	fistName: "Cynthia",
+	lastName: "Andrada",
+	dateOfBirth: "1987-08-20",
+	course:[
+		{
+			course_id: 1,
+			partial_1:4,
+			partial_2: 10,
+			partial_3: 9,
+			final: 8
+		},
+		{
+			course_id: 2,
+			partial_1: 10,
+			partial_2: 9,
+			partial_3: 8,
+			final: 9
+		},
+		{
+			course_id: 3,
+			partial_1: 1,
+			partial_2: null,
+			partial_3: null,
+			final: null
+		}
+		]
+}
+)
+
+//inserting second student
+db.student.insert(
+{	_id: 2,
+	registrationNumber: 2,
+	fistName: "Leonardo",
+	lastName: "Piergentili",
+	dateOfBirth: "1993-09-16",
+	course:[
+		{
+			course_id: 1,
+			partial_1:8,
+			partial_2: 7,
+			partial_3: 4,
+			final: 6
+		},
+		{
+			course_id: 3,
+			partial_1: 4,
+			partial_2: 6,
+			partial_3: 4,
+			final: 6
+		}
+		]
+}
+)
+
+//inserting third student
+db.student.insert(
+{	_id: 3,
+	registrationNumber: 3,
+	fistName: "Antonela",
+	lastName: "Piergentili",
+	dateOfBirth: "1993-09-16",
+	course:[
+		{
+			course_id: 1,
+			partial_1:7,
+			partial_2: 6,
+			partial_3: 6,
+			final: 8
+		},
+		{
+			course_id: 3,
+			partial_1: 9,
+			partial_2: 9,
+			partial_3: 4,
+			final: 7
+		}
+		]
+}
+)
+
+//inserting fourth student
+db.student.insert(
+{	_id: 4,
+	registrationNumber: 4,
+	fistName: "Fernanda",
+	lastName: "Valverde",
+	dateOfBirth: "1986-05-19",
+	course:[
+		{
+			course_id: 1,
+			partial_1:5,
+			partial_2: 4,
+			partial_3: 5,
+			final: 5
+		},
+		{
+			course_id: 2,
+			partial_1: 2,
+			partial_2: 2,
+			partial_3: 4,
+			final: null
+		},
+		{
+			course_id: 3,
+			partial_1: 2,
+			partial_2: 4,
+			partial_3: 2,
+			final: null
+		}
+		]
+}
+)
+
+//inserting fifth student
+db.student.insert(
+{	_id: 5,
+	registrationNumber: 5,
+	fistName: "Ailin",
+	lastName: "Almaza",
+	dateOfBirth: "1986-12-08",
+	course:[
+		{
+			course_id: 2,
+			partial_1: 1,
+			partial_2: 5,
+			partial_3: 9,
+			final: 8
+		},
+		]
+}
+)
+
+//inserting the sixth student
+db.student.insert(
+{	_id: 6,
+	registrationNumber: 6,
+	fistName: "Marianela",
+	lastName: "Piergentili",
+	dateOfBirth: "1986-11-19",
+	course:[
+		{
+			course_id: 3,
+			partial_1: 8,
+			partial_2: 8,
+			partial_3: 6,
+			final: 7
+		}
+		]
+}
+)
+
+//inserting the seventh student
+db.student.insert(
+{	_id: 7,
+	registrationNumber: 7,
+	fistName: "Matias",
+	lastName: "Sanhueza",
+	dateOfBirth: "1986-08-04",
+	course:[
+		{
+			course_id: 1,
+			partial_1:6,
+			partial_2: 3,
+			partial_3: 7,
+			final: 6
+		},
+		{
+			course_id: 2,
+			partial_1: 7,
+			partial_2: 6,
+			partial_3: 7,
+			final: 8
+		},
+		{
+			course_id: 3,
+			partial_1: 9,
+			partial_2: 2,
+			partial_3: 2,
+			final: null
+		}
+		]
+}
+)
+
+//inserting the eighth student
+db.student.insert(
+{	_id: 8,
+	registrationNumber: 8,
+	fistName: "Nataly",
+	lastName: "Silva",
+	dateOfBirth: "1986-05-29",
+	course:[
+		{
+			course_id: 1,
+			partial_1:2,
+			partial_2: 10,
+			partial_3: null,
+			final: null
+		},
+		{
+			course_id: 2,
+			partial_1: 7,
+			partial_2: 7,
+			partial_3: 6,
+			final: 2
+		},
+		]
+}
+)
+
+//inserting the ninth student
+db.student.insert(
+{	_id: 9,
+	registrationNumber: 9,
+	fistName: "Gaston",
+	lastName: "Quiroga",
+	dateOfBirth: "1987-04-04",
+	course:[
+		{
+			course_id: 1,
+			partial_1:10,
+			partial_2: 6,
+			partial_3: 8,
+			final: 6
+		}
+		]
+}
+)
+
+//inserting the tenth student
+db.student.insert(
+{	_id: 10,
+	registrationNumber: 10,
+	fistName: "Raul",
+	lastName: "Rodriguez",
+	dateOfBirth: "1982-06-09",
+	course:[
+		{
+			course_id: 2,
+			partial_1: 4,
+			partial_2: 4,
+			partial_3: 4,
+			final: 2
+		}
+		]
+}
+)
+
+//inserting the eleventh student
+db.student.insert(
+{	_id: 11,
+	registrationNumber: 11,
+	fistName: "Jesus",
+	lastName: "Mendez",
+	dateOfBirth: "1983-10-16",
+	course:[
+		{
+			course_id: 1,
+			partial_1:1,
+			partial_2: null,
+			partial_3: null,
+			final: null
+		},
+		{
+			course_id: 3,
+			partial_1: 3,
+			partial_2: 7,
+			partial_3: 6,
+			final: 8
+		}
+		]
+}
+)
+
+//inserting the twelfth student
+db.student.insert(
+{	_id: 12,
+	registrationNumber: 12,
+	fistName: "Noelia",
+	lastName: "Ceballos",
+	dateOfBirth: "1979-08-21",
+	course:[
+		{
+			course_id: 2,
+			partial_1: 9,
+			partial_2: 8,
+			partial_3: 10,
+			final: 9
+		}
+		]
+}
+)
+
+//inserting the third student
+db.student.insert(
+{	_id: 13,
+	registrationNumber: 13,
+	fistName: "Julieta",
+	lastName: "Suarez",
+	dateOfBirth: "1985-08-22",
+	course:[
+		{
+			course_id: 1,
+			partial_1:9,
+			partial_2: 9,
+			partial_3: 10,
+			final: 9
+		},
+		{
+			course_id: 3,
+			partial_1: 2,
+			partial_2: 1,
+			partial_3: null,
+			final: null
+		}
+		]
+}
+)
+
+//inserting the fourtheenth student
+db.student.insert(
+{	_id: 14,
+	registrationNumber: 14,
+	fistName: "Romina",
+	lastName: "Lobos",
+	dateOfBirth: "1986-01-28",
+	course:[
+		{
+			course_id: 2,
+			partial_1: 7,
+			partial_2: 7,
+			partial_3: 6,
+			final: 5
+		},
+		{
+			course_id: 3,
+			partial_1: 1,
+			partial_2: 5,
+			partial_3: 8,
+			final: 6
+		}
+		]
+}
+)
+
+//inserting the fifteenth student
+db.student.insert(
+{	_id: 15,
+	registrationNumber: 15,
+	fistName: "Daniela",
+	lastName: "Bonini",
+	dateOfBirth: "1986-06-03",
+	course:[
+		{
+			course_id: 2,
+			partial_1: 2,
+			partial_2: 1,
+			partial_3: null,
+			final: null
+		},
+		{
+			course_id: 3,
+			partial_1: 7,
+			partial_2: 4,
+			partial_3: 6,
+			final: 2
+		}
+		]
+}
+)
+
+//inserting the sixteenth student
+db.student.insert(
+{	_id: 16,
+	registrationNumber: 16,
+	fistName: "Claudia",
+	lastName: "Carreras",
+	dateOfBirth: "1981-07-13",
+	course:[
+		{
+			course_id: 1,
+			partial_1:2,
+			partial_2: 4,
+			partial_3: 4,
+			final: null
+		},
+		{
+			course_id: 2,
+			partial_1: 9,
+			partial_2: 2,
+			partial_3: 4,
+			final: 5
+		}
+		]
+}
+)

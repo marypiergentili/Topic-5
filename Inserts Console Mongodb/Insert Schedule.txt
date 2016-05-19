@@ -1,0 +1,66 @@
+show dbs
+//create or use a bd named high_school
+use high_school
+
+//inserting first schedule
+db.schedule.insert(
+{	_id: 1,
+	day: "Monday",
+	startTime: "14:00:00",
+	finishTime: "16:00:00"	
+}
+)
+
+//inserting second schedule
+db.schedule.insert(
+{	_id: 2,
+	day: "Monday",
+	startTime: "16:00:00",
+	finishTime: "18:00:00"	
+}
+)
+
+//inserting third schedule
+db.schedule.insert(
+{	_id: 3,
+	day: "Tuesday",
+	startTime: "14:00:00",
+	finishTime: "15:00:00"	
+}
+)
+
+//inserting fourth schedule
+db.schedule.insert(
+{	_id: 4,
+	day: "Tuesday",
+	startTime: "15:00:00",
+	finishTime: "17:00:00"	
+}
+)
+
+//inserting fifth schedule
+db.schedule.insert(
+{	_id: 5,
+	day: "Wednesday",
+	startTime: "16:00:00",
+	finishTime: "18:00:00"	
+}
+)
+
+//inserting sixth schedule
+db.schedule.insert(
+{	_id: 6,
+	day: "Thursday",
+	startTime: "14:00:00",
+	finishTime: "16:00:00"	
+}
+)
+
+//inserting seventh schedule
+db.schedule.insert(
+{	_id: 7,
+	day: "Friday",
+	startTime: "15:00:00",
+	finishTime: "17:00:00"	
+}
+)

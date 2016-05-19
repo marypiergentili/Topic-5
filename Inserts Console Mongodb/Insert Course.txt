@@ -1,0 +1,177 @@
+show dbs
+//create or use a bd named high_school
+use high_school
+
+//inserting first course
+db.course.insert(
+{	_id: 1,
+	name: "Maths",
+	hoursPerWeek: 5,
+	year: 2016,
+	schedule:[
+		{
+			schedule_id: 1
+		},
+		{
+			schedule_id: 3 
+		},
+		{
+			schedule_id: 5
+		}
+		],
+	students:[
+		{
+			student_id: 1
+		},
+		{
+			student_id: 2
+		},
+		{
+			student_id: 3
+		},
+		{
+			student_id: 4
+		},
+		{
+			student_id: 7
+		},
+		{
+			student_id: 8
+		},
+		{
+			student_id: 9
+		},
+		{
+			student_id: 11
+		},
+		{
+			student_id: 13
+		},		
+		{
+			student_id: 16
+		}
+		],
+	teachers:[
+		{
+			teacher_id: 1
+		},
+		{
+			teacher_id: 3
+		}]
+
+}
+)
+
+//inserting second course
+db.course.insert(
+{	_id: 2,
+	name: "OOP",
+	hoursPerWeek: 4,
+	year: 2016,
+	schedule:[
+		{
+			schedule_id: 2
+		},
+		{
+			schedule_id: 6 
+		}
+		],
+	students:[
+		{
+			student_id: 1
+		},
+		{
+			student_id: 4
+		},
+		{
+			student_id: 5
+		},
+		{
+			student_id: 7
+		},
+		{
+			student_id: 8
+		},
+		{
+			student_id: 10
+		},
+		{
+			student_id: 12
+		},
+		{
+			student_id: 14
+		},
+		{
+			student_id: 15
+		},		
+		{
+			student_id: 16
+		}
+		],
+	teachers:[
+		{
+			teacher_id: 2
+		},
+		{
+			teacher_id: 3
+		}]
+
+}
+)
+
+//inserting third course
+db.course.insert(
+{	_id: 3,
+	name: "Logics",
+	hoursPerWeek: 2,
+	year: 201+,
+	schedule:[
+		{
+			schedule_id: 4
+		},
+		{
+			schedule_id: 7 
+		}	
+		],
+	students:[
+		{
+			student_id: 1
+		},
+		{
+			student_id: 2
+		},
+		{
+			student_id: 3
+		},
+		{
+			student_id: 4
+		},
+		{
+			student_id: 6
+		},
+		{
+			student_id: 7
+		},
+		{
+			student_id: 11
+		},
+		{
+			student_id: 13
+		},
+		{
+			student_id: 14
+		},		
+		{
+			student_id: 15
+		},
+		],
+	teachers:[
+		{
+			teacher_id: 1
+		},
+		{
+			teacher_id: 2
+		}]
+
+}
+)

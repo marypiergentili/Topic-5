@@ -1,0 +1,9 @@
+use high_school
+
+db.student.find(
+   { course: { $elemMatch: { 'final':{$gt: 4}, 'course_id':1 } } }
+)
+
+db.course.find({"teachers.teacher_id": 1}).sort({"name": 1})
+
+
